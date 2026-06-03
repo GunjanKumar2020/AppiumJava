@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNgHandsOnSuite">
+
+    <test name="AlwaysRunTest">
+        <classes>
+       		  <class name="testNgHandsOn.AlwaysRun">
+         <methods>
+         	<include name="test1" />
+         	<exclude name="test2" />
+         </methods>
+         </class>
+        </classes>
+    </test>
+
+    <test name="HardAndSoftAssertion">
+        <classes>
+            <class name="testNgHandsOn.HardAndSoftAssertion">
+            <methods>
+            <include name="softAssertion" />
+            <exclude name="hardAssertion" />
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="TestNgOthers">
+        <classes>
+            <class name="testNgHandsOn.BeforeAndAfterMethod"/>
+            <class name="testNgHandsOn.TestSequenceWithoutPriority"/>
+            <class name="testNgHandsOn.ITestContextFeature"/>
+            <class name="testNgHandsOn.BeforeAndAfterTest"/>
+        </classes>
+    </test>
+
+</suite>
