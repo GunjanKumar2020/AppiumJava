@@ -1,3 +1,7 @@
+package missllaneous.demo4;
+
+import org.testng.annotations.Test;
+
 public class WiFiSettings
   {
     @Test
